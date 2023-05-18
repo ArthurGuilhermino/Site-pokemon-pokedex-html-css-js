@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Oxanium" cursive;
+    box-sizing: border-box;
+}
+
+main {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px;
+    position: relative;
+}
+
+body {
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+}
+
+ul li img {
+    margin-top: 10px;
+    width: 20px;
+}
+
+ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    background-color: rgba(180, 45, 45, 0.577);
+    transition: 0.3s;
+    padding: 10px;
+    border: 5px;
+}
+.pokedex {
+    width: 100%;
+    max-width: 425px;
+}
+
+.pokemonImagem {
+    position: absolute;
+    height: 18%;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+}
+
+.pokemonData {
+    position: absolute;
+    font-weight: bold;
+    color: #949393;
+    top: 54.5%;
+    right: 27%;
+    /*min, desejavel ,max*/
+    font-size: clamp(8px, 5vw, 25px);
+}
+
+.pokemonName {
+    color: #3a444d;
+    text-transform: capitalize;
+}
+
+.pokemonMove {
+    border-radius: 4px;
+    color: #333;
+    font-size: clamp(8px, 5vw, 22px);
+    line-height: 35px;
+}
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+
+.inputSearch {
+    width: 100%;
+    padding: 3%;
+    border: 2px solid #333;
+    outline: none;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 11%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-55%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #333;
+    border-radius: 4px;
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: bold;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #ccc;
+    font-size: 0.8rem;
+}
+
+.moves {
+    background-color: rgba(241, 26, 69, 0.943);
+    border-radius: 20px 20px 0px 20px;
+    box-shadow: -3px 4px 0 #484747;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.ataques {
+    font-size: clamp(20px, 10vw, 1rem);
+    color: #333;
+}

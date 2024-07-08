@@ -20,24 +20,29 @@ body {
     background: linear-gradient(to bottom, #6ab7f5, #fff);
 }
 
-ul li img {
-    margin-top: 10px;
-    width: 20px;
+ul li a img {
+    width: 18px;
 }
 
-ul li a {
-    font-size: 18px;
+nav ul a {
+    padding: 15px;
+    color: black;
+    font-size: 20px;
+    background-color: rgba(252, 252, 252, 0.727);
+    border-radius: 4px;
+    transition: 0.2s;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    transition: 0.3s;
 }
 
 ul li a:hover {
-    background-color: rgba(180, 45, 45, 0.577);
-    transition: 0.3s;
-    padding: 10px;
-    border: 5px;
+    background-color: rgba(242, 67, 67, 0.727);
 }
+
+ul li {
+    padding: 30px;
+}
+
 .pokedex {
     width: 100%;
     max-width: 425px;
@@ -45,9 +50,10 @@ ul li a:hover {
 
 .pokemonImagem {
     position: absolute;
-    height: 18%;
+    height: 20%;
     bottom: 55%;
     left: 50%;
+    /* x, y */
     transform: translate(-63%, 20%);
 }
 
@@ -55,7 +61,7 @@ ul li a:hover {
     position: absolute;
     font-weight: bold;
     color: #949393;
-    top: 54.5%;
+    top: 55.5%;
     right: 27%;
     /*min, desejavel ,max*/
     font-size: clamp(8px, 5vw, 25px);
@@ -64,13 +70,6 @@ ul li a:hover {
 .pokemonName {
     color: #3a444d;
     text-transform: capitalize;
-}
-
-.pokemonMove {
-    border-radius: 4px;
-    color: #333;
-    font-size: clamp(8px, 5vw, 22px);
-    line-height: 35px;
 }
 
 .form {
@@ -94,7 +93,7 @@ ul li a:hover {
 
 .buttons {
     position: absolute;
-    bottom: 11%;
+    bottom: 10%;
     left: 50%;
     width: 65%;
     transform: translate(-55%, 0);
@@ -121,12 +120,21 @@ ul li a:hover {
     background-color: rgba(241, 26, 69, 0.943);
     border-radius: 20px 20px 0px 20px;
     box-shadow: -3px 4px 0 #484747;
-    max-width: 350px;
-    margin: auto;
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: 415px;
+    margin: 0 0 20px 0;
+    display: inline-block;
+    padding: 15px;
 }
 
 .ataques {
-    font-size: clamp(20px, 10vw, 1rem);
+    font-size: clamp(18px, 10vw, 1rem);
     color: #333;
+}
+
+.pokemonMove {
+    border-radius: 4px;
+    color: #333;
+    font-size: clamp(10px, 5vw, 22px);
+    line-height: 35px;
 }

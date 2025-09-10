@@ -43,7 +43,6 @@ const renderPokemon = async (pokemon) => {
     const data = await fetchPokemon(pokemon);
 
     if (data) {
-        // pokemonMove.innerHTML = " ";
         pokemonName.innerHTML = data.name;
         pokemonId.innerHTML = data.id;
         pokemonImg.style.display = "block";
@@ -52,10 +51,6 @@ const renderPokemon = async (pokemon) => {
         searchPokemon = data.id;
         input.value = "";
 
-        // const numberPoke = 55;
-        // for (i = 0; i <= numberPoke; i++) {
-        //     pokemonMove.innerHTML += data.moves[i].move.name + " ↔ ";
-        // }
     } else {
         pokemonName.innerHTML = "Não encontrado ☹";
         pokemonId.innerHTML = "";
@@ -79,7 +74,7 @@ prev.addEventListener("click", () => {
 next.addEventListener("click", () => {
     {
         if (searchPokemon === 1025) {
-            searchPokemon = searchPokemon;
+            renderPokemon(1);
         } else {
             ++searchPokemon;
             renderPokemon(searchPokemon);
@@ -88,3 +83,5 @@ next.addEventListener("click", () => {
 });
 
 renderPokemon(searchPokemon);
+
+
